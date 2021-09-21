@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5 ;
+   text-align: center;
+   background: url("../milkshake/images/bg-pattern.svg") no-repeat top;
+}
+
+.text{
+    background: url("../milkshake/images/pattern-circles.svg") no-repeat bottom;
+    background-size: contain;
+    margin-bottom: 2rem;
+}
+
+
+
+.text h1{
+    padding-top: 2rem;
+    margin-bottom: .4em;
+}
+
+span{
+    font-size: 3rem;
+}
+
+
+.card{
+    width: 40%;
+    margin: auto;
+    box-shadow: 2px 4px 10px silver;
+    padding: 4rem;
+    border-radius: .5em;
+    display: grid;
+    position: relative;
+    margin-bottom: 3rem;
+    animation: fade-in 1.4s .1s cubic-bezier(1,0,.5,1) forwards;
+    opacity: 0;
+}
+
+.card:hover{
+    width: 41%;
+    box-shadow: 1px 2px 15px rgb(104, 102, 102);
+    transition: all 1s ease-out;
+}
+
+.last{
+    margin-bottom: 1.4rem;
+}
+
+.card small{
+    display: flex;
+    position: absolute;
+    bottom: .9em;
+    left: .9em;
+    font-size: 18px;
+}
+
+.imagess{
+    width: 24.7%;
+}
+
+img{
+    transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+img:hover, img:focus{
+    opacity: .5;
+    width: 50%;
+}
+
+@media(max-width:995px){
+    .imagess{
+        width: 33%;
+    }
+    .card{
+        width: 80%;
+        padding: 2rem;
+    }
+    .card:hover{
+        width: 82%;
+    }
+}
+
+@media(max-width:796px){
+    .imagess{
+        width: 49%;
+    }
+    img:hover, img:focus{
+        width: 80%;
+    }
+}
+
+@media(max-width:455px){
+    .imagess{
+        width: 90%;
+    }
+    body{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 23px;
+    }
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
